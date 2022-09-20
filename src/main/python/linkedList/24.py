@@ -3,12 +3,8 @@
 # author: weiyu
 # create_time : 9/19/2022
 # description :  [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/submissions/)
-
-
-class ListNode:
-     def __init__(self, val=0, next=None):
-         self.val = val
-         self.next = next
+from linkedList import ListNode
+from linkedList import list_to_linkedList,print_linkedList
 
 
 class Solution:
@@ -24,16 +20,9 @@ class Solution:
         return self.next
 
 if __name__ == '__main__':
-    a = [1,2,3,4]
-    head = ListNode()
-    cur = head
-    for i in a:
-        cur.next = ListNode(i)
-        cur = cur.next
+    head = list_to_linkedList([1,2,3,4])
     obj = Solution()
-    head = obj.swapPairs(head.next)
-    while head:
-        print(head.val)
-        head = head.next
+    head = obj.swapPairs(head)
+    print_linkedList(head)
 
 
