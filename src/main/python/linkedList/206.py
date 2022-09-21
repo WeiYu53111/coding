@@ -7,13 +7,13 @@
 # Definition for singly-linked list.
 
 
-
 from linkedList import ListNode
-from linkedList import list_to_linkedList,print_linkedList
+from linkedList import list_to_linkedList, print_linkedList
+
 
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
-        prev,cur = None,head
+        prev, cur = None, head
         while cur:
             tmp = cur.next
             cur.next = prev
@@ -21,8 +21,9 @@ class Solution:
             cur = tmp
         return prev
 
+
 if __name__ == '__main__':
-    head = list_to_linkedList([1,2,3,4,5])
+    head = list_to_linkedList([1, 2, 3, 4, 5])
     obj = Solution()
     head = obj.reverseList(head)
     print_linkedList(head)
