@@ -13,3 +13,8 @@
 ## 二分查找
 [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)  
 [704. 二分查找](https://leetcode.cn/problems/binary-search/)
+[35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
+
+
+## 队列与栈
+[225. 用队列实现栈](https://leetcode-cn.com/problems/implement-stack-using-queues/)  
