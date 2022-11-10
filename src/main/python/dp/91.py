@@ -130,6 +130,6 @@ if __name__ == '__main__':
     obj = Solution()
     input = "111111111111111111111111111111111111111111111"
     # print("递归:" + str(obj.numDecodings_recursion(input)))  # 1836311903
-    print("dp:" + str(obj.numDecodings(input)))
+    print("dp:" + str(obj.numDecodings(input)))  # 1836311903
 
 # leetcode submit region end(Prohibit modification and deletion)
